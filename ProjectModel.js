@@ -3,7 +3,8 @@ function ProjectModel() {
     this.name;
     this.id
     this.description;
-    this.date = new Date();;
+    this.date = new Date();
+    this.time = "";
     this.leadVolunteerId;
     
 }
@@ -13,6 +14,6 @@ ProjectModel.prototype.methodSample = function() {
 
 };
 
-Metis.define(ProjectModel, "Project", "id", "name", "description", "date", "leadVolunteerId");
+Metis.define(ProjectModel, "Project", "id", "name", "description", "date", "time", "leadVolunteerId");
 Metis.defineSortColumn(ProjectModel, "date", "desc");
 Metis.createGettersAndSetters(ProjectModel);

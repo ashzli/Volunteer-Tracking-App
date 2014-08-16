@@ -33,7 +33,7 @@ function ProjectView() {
         
         projectTable.addHeader("Date", "date", true, true, 150);
         projectTable.addColumn(function(projectData) {
-            return projectData.getDate().toDateString();
+            return projectData.getDate().toDateString(); //  +" "+ projectData.getTime();
             
         });
         projectTable.addHeader("Description", "description", 400);
